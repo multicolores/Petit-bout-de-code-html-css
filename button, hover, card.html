@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        border-bottom: 1px solid black;
+      }
+      /*  section::after {
+        content: "";
+        position: absolute;
+        width: 5%;
+        height: 2px;
+        background: rgba(0, 0, 0, 0.644);
+        bottom: 0;
+      }
+*/
+      /* boutton avec hover effect simpa */
+      button {
+        border: 2px solid black;
+        background: none;
+        width: 10%;
+        height: 7%;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-style: italic;
+        transition: 0.5s;
+        box-shadow: 0px 0px black;
+      }
+      button:hover {
+        box-shadow: 10px 5px black;
+      }
+
+      /* text en cercle */
+      .section_2 span {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+      }
+      .lettre_1 {
+        transform: translate(-1px, 10px) rotate(-16deg);
+      }
+      .lettre_2 {
+        transform: translate(-1px, 4px) rotate(-9deg);
+      }
+      .lettre_3 {
+        transform: translate(0px, 0px) rotate(-5deg);
+      }
+      .lettre_4 {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+      .lettre_5 {
+        transform: translate(0px, 0px) rotate(5deg);
+      }
+      .lettre_6 {
+        transform: translate(1px, 4px) rotate(9deg);
+      }
+      .lettre_7 {
+        transform: translate(1px, 10px) rotate(16deg);
+      }
+
+      /* animaion text overflow hidden  je me comprend*/
+
+      .section_3 div {
+        width: 30%;
+        height: 10%;
+        overflow: hidden;
+      }
+      .section_3 h1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: text 2.5s infinite;
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      @keyframes text {
+        0% {
+          transform: translateY(0%);
+        }
+        50% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(-200%);
+        }
+      }
+      /*on hover effect */
+
+      .section_4 div {
+        width: 30%;
+        height: 10%;
+        overflow: hidden;
+      }
+      .section_4 h1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: italic;
+        transition: all 600ms;
+      }
+      .section_4 div:hover h1 {
+        transform: translateY(-100%);
+      }
+
+      /* card */
+      .section_5 .container {
+        width: 20%;
+        height: 50%;
+        background-color: #1a1a1a;
+        border-radius: 5%;
+        color: white;
+        position: relative;
+        transition: 600ms;
+      }
+
+      /*  .section_5 .container:hover .image {
+        width: 13vw;
+        height: 13vw;
+      }*/
+      .section_5 .container:hover .image img {
+        transform: scale(1.2);
+      }
+      .section_5 .image {
+        width: 11vw;
+        height: 11vw;
+        transform: translate(-10%, -30%);
+        overflow: hidden;
+        border-radius: 50%;
+        transition: All 600ms;
+        position: absolute;
+      }
+      .section_5 .image img {
+        width: 100%;
+        transition: 1.5s;
+      }
+      .section_5 h2 {
+        margin-left: 10%;
+        margin-top: 50%;
+        margin-bottom: 10%;
+        font-size: 2rem;
+      }
+      .section_5 p {
+        margin-left: 10%;
+        margin-right: 40%;
+      }
+      .section_5 .dessin {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 3%;
+        opacity: 0.8;
+        font-weight: bold;
+        font-style: italic;
+      }
+      .section_5 .crayon {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 5%;
+        font-weight: bold;
+        font-style: italic;
+      }
+      .section_5 .temps {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 5%;
+        color: rgb(235, 129, 129);
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <button>See more</button>
+    </section>
+
+    <section class="section_2">
+      <span class="lettre_1">C</span>
+      <span class="lettre_2">O</span>
+      <span class="lettre_3">N</span>
+      <span class="lettre_4">T</span>
+      <span class="lettre_5">A</span>
+      <span class="lettre_6">C</span>
+      <span class="lettre_7">T</span>
+    </section>
+
+    <section class="section_3">
+      <div>
+        <h1>Portfolio</h1>
+        <h1>Florian</h1>
+        <h1>Portfolio</h1>
+      </div>
+    </section>
+    <section class="section_4">
+      <div>
+        <h1>Portfolio</h1>
+        <h1>Portfolio</h1>
+      </div>
+    </section>
+    <section class="section_5">
+      <div class="container">
+        <div class="image">
+          <img src="file:///D:/Bureau/Dessin/sigogne.webp" alt="image" />
+        </div>
+        <h2>Grue</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          fugiat
+        </p>
+        <span class="dessin">Dessin</span>
+        <span class="crayon">crayon</span>
+        <span class="temps">2h</span>
+      </div>
+    </section>
+  </body>
+</html>
