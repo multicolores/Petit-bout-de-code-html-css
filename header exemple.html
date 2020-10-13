@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        overflow-x: hidden;
+      }
+      .header_1{
+        width: 100vw;
+        height: 100vh;
+        color: white;
+        background: rgb(22, 22, 22);
+        position: relative;
+      }
+      .header_text{
+        position: absolute;
+        left: 12%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30vw;
+      }
+      .header_text h1{
+        font-size: 8vw;
+      }
+      .header_text h3{
+        font-size: 1.5vw;
+        font-style: italic;
+        color: rgb(167, 0, 0);
+        font-weight: normal;
+        margin-top: -1%;
+      }
+      .header_text p{
+        padding-top: 10%;
+        width: 70%;
+        line-height: 140%;
+      }
+      .header_text button{
+        background:rgb(139, 20, 40);
+        border: 1px solid rgb(167, 0, 0);
+        color: white;
+        border: none;
+        width: 100px;
+        height: 40px;
+        margin-top: 10%;
+        transition: .4s;
+        font-size: 1em;
+        font-weight: bold;
+        border-radius: 3%;
+        font-style: italic;
+
+      }
+      .header_text button:hover{
+        border: 1px solid rgb(167, 0, 0);
+        background: rgba(0, 0, 0, 0);
+      }
+      .header_1 img{
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60vw;
+      }
+      .red_rectangle{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50vw;
+        height: 50vh;
+        background: #bb2627;
+        background-image: linear-gradient(274deg, rgb(82, 6, 31),rgb(190, 27, 54));
+      }
+      .header_1 nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 7%;
+      }
+      .header_1 nav ul{
+        display: flex;
+        width: 25%;
+        justify-content: space-around;
+        list-style: none;
+        font-style: italic;
+        font-size: 1.2em;
+      }
+      .header_1 span{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .header_1 span a img{
+        width: 140px;
+        left: 20px;
+        top: 55px;
+        filter: invert(100%);
+      }
+
+    /* DARK MODE */
+      .darkmode{
+        color: black;
+        background: white;
+        
+      }
+      .darkmode .header_text button:hover{
+        border: 1px solid rgb(167, 0, 0);
+        background: rgba(0, 0, 0, 0);
+        color: black;
+      }
+      .darkmode span a img{
+        filter: invert(0%);
+      }
+    </style>
+  </head>
+  <body>
+
+   <header class="header_1">
+     <span><a href="/"><img src="photos/logo.png" alt=""></a></span>
+     <nav>
+      <ul>
+        <li>Sushi</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+     </nav>
+     <div class="header_text">
+        <h1>Sushi</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <p>Lorem ipsum dolor sit amet. ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque ipsam numquam eveniet quibusdam excepturi quas aliquid quis illum sit!</p>
+        <button>About</button>
+      </div>
+      <div class="red_rectangle"></div>
+      <img src="photos/plat_sushi.png" alt="">
+   </header>
+
+
+   <header class="header_1 darkmode">
+    <span><a href="/"><img src="photos/logo.png" alt=""></a></span>
+    <nav>
+     <ul>
+       <li>Sushi</li>
+       <li>About</li>
+       <li>Contact</li>
+     </ul>
+    </nav>
+    <div class="header_text">
+       <h1>Sushi</h1>
+       <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+       <p>Lorem ipsum dolor sit amet. ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque ipsam numquam eveniet quibusdam excepturi quas aliquid quis illum sit!</p>
+       <button>About</button>
+     </div>
+     <div class="red_rectangle"></div>
+     <img src="photos/plat_sushi.png" alt="">
+  </header>
+  </body>
+</html>

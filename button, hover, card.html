@@ -130,27 +130,43 @@
         color: white;
         position: relative;
         transition: 600ms;
+
+        height: 20%;
+      }
+      .section_5 .container:hover {
+        height: 50%;
+      }
+      .section_5 h2,
+      .section_5 p {
+        opacity: 0;
+        transition: 0.5s;
+        pointer-events: none;
       }
 
-      /*  .section_5 .container:hover .image {
-        width: 13vw;
-        height: 13vw;
-      }*/
+      .section_5 .container:hover h2,
+      .section_5 .container:hover p {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .section_5 .container:hover .image {
+        transform: translate(-10%, -30%) scale(1.1);
+      }
       .section_5 .container:hover .image img {
         transform: scale(1.2);
       }
       .section_5 .image {
         width: 11vw;
         height: 11vw;
-        transform: translate(-10%, -30%);
         overflow: hidden;
         border-radius: 50%;
         transition: All 600ms;
         position: absolute;
+        transform: translate(40%, -5%) scale(0.8);
       }
       .section_5 .image img {
         width: 100%;
-        transition: 1.5s;
+        transition: 1.7s;
       }
       .section_5 h2 {
         margin-left: 10%;
@@ -188,6 +204,51 @@
         font-weight: bold;
         font-style: italic;
       }
+
+      /* img reveal anim */
+      .section_6 div {
+        width: 20vw;
+        overflow: hidden;
+        transition: 500ms;
+        border-radius: 1%;
+      }
+      .section_6 div img {
+        width: 100%;
+        transition: 1.3s;
+      }
+      .section_6 div:hover img {
+        transform: scale(1.2);
+      }
+      .section_6 div:hover {
+        transform: scale(1.3);
+      }
+
+      .section_7 div {
+        width: 20vw;
+        overflow: hidden;
+        transition: 500ms;
+        border-radius: 1%;
+        position: relative;
+      }
+      .section_7 div img {
+        width: 100%;
+        transition: 1.3s;
+      }
+      .section_7 div::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: white;
+        right: 0; /* pour que ca parte vers la droite et en même temps le placer bien sûr*/
+        transition: 600ms;
+      }
+      .section_7 div:hover img {
+        transform: scale(1.5);
+      }
+      .section_7 div:hover::after {
+        width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -212,12 +273,14 @@
         <h1>Portfolio</h1>
       </div>
     </section>
+
     <section class="section_4">
       <div>
         <h1>Portfolio</h1>
         <h1>Portfolio</h1>
       </div>
     </section>
+
     <section class="section_5">
       <div class="container">
         <div class="image">
@@ -230,7 +293,18 @@
         </p>
         <span class="dessin">Dessin</span>
         <span class="crayon">crayon</span>
-        <span class="temps">2h</span>
+        <span class="temps">3h</span>
+      </div>
+    </section>
+
+    <section class="section_6">
+      <div>
+        <img src="file:///D:/Bureau/Dessin/sigogne.webp" alt="image" />
+      </div>
+    </section>
+    <section class="section_7">
+      <div>
+        <img src="file:///D:/Bureau/Dessin/sigogne.webp" alt="image" />
       </div>
     </section>
   </body>
