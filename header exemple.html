@@ -59,7 +59,7 @@
         border: 1px solid rgb(167, 0, 0);
         background: rgba(0, 0, 0, 0);
       }
-      .header_1 img{
+      .header_1 .sushi_image{
         position: absolute;
         right: 0%;
         top: 50%;
@@ -97,12 +97,80 @@
         left: 0;
       }
       .header_1 span a img{
-        width: 140px;
+        width: 9vw;
+        position: absolute;
+        top: 10px;
         left: 20px;
-        top: 55px;
         filter: invert(100%);
       }
+      @media screen and (max-width: 1230px)
+      {
+        .header_text p{
+          width: 100%;
+        }
+      .header_1 span a img{
+        width: 11vw;
+      }
+      }
+      @media screen and (max-width: 850px)
+      {
+      .header_text{
+        left: 22%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40vw;
+      }
+      .header_1 .sushi_image{
+        position: absolute;
+        top: 87%;
+        width: 40em;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .red_rectangle{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90%;
+        width: 100vw;
+        height: 33vh;
+        background: #bb2627;
+        background-image: linear-gradient(274deg, rgb(82, 6, 31),rgb(190, 27, 54));
+      }
+      .header_1 nav ul{
+        width: 40%;
+      }
+      .header_1 span a img{
+        width: 19vw;
+      }
+      .header_1{
+        overflow-x: hidden;
+      }
+      .darkmode{
+        margin-top: 50vh;
+      }
 
+      }
+      @media screen and (max-width: 590px){
+        .header_text{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 70vw;
+      }
+      .header_text h1{
+        font-size: 5em;
+      }
+      .header_text h3{
+        font-size: 1em;
+      }
+      .header_text p{
+        line-height: 160%;
+      }
+      .header_1 nav ul{
+        width: 70%;
+      }
+      }
     /* DARK MODE */
       .darkmode{
         color: black;
@@ -137,8 +205,8 @@
         <button>About</button>
       </div>
       <div class="red_rectangle"></div>
-      <img src="photos/plat_sushi.png" alt="">
-   </header>
+      <img src="photos/plat_sushi.png" alt="" class="sushi_image">
+    </header>
 
 
    <header class="header_1 darkmode">
@@ -157,7 +225,7 @@
        <button>About</button>
      </div>
      <div class="red_rectangle"></div>
-     <img src="photos/plat_sushi.png" alt="">
+     <img src="photos/plat_sushi.png" alt="" class="sushi_image">
   </header>
   </body>
 </html>
