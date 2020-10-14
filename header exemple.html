@@ -185,6 +185,77 @@
       .darkmode span a img{
         filter: invert(0%);
       }
+      /* MOBILE VERSION */
+      .mobile_version{
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(224, 224, 224);
+      }
+      .mobile_version img{
+        height: 85%;
+        border-radius: 15px;
+      }
+      .mobile_version img:first-child{
+        margin-left: 10%;
+      }
+      .mobile_version img:last-child{
+        margin-right: 10%;
+      }
+
+      /* DEUXIEME HEADER SPACE STAR */
+      .header_2{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background: #161515;
+      }
+      .header_2 nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 7%;
+      }
+      .header_2 nav ul{
+        display: flex;
+        width: 25%;
+        justify-content: space-around;
+        list-style: none;
+        font-style: italic;
+        font-size: 1.2em;
+      }
+      .header_2 span{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .header_2 span a img{
+        width: 9vw;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+      }
+      .header_2 .left{
+        width: 45%;
+        height: 100%;
+        background: white;
+        position: absolute;
+        top: 0;
+      }
+      .header_2 .left .text{
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20%;
+        background: rgb(110, 110, 110);
+      }
+      .header_2 .left .text h1{
+        font-size: 6vw;
+      }
+
     </style>
   </head>
   <body>
@@ -226,6 +297,30 @@
      </div>
      <div class="red_rectangle"></div>
      <img src="photos/plat_sushi.png" alt="" class="sushi_image">
+  </header>
+  <section class="mobile_version">
+    <img src="photos/sushi_darkmode_mobile.png" alt="">
+    <img src="photos/suhsi_lightmode_mobile.png" alt="">
+  </section>
+
+  <header class="header_2">
+    <span><a href="/"><img src="photos/logo.png" alt=""></a></span>
+    <nav>
+     <ul>
+       <li>overview</li>
+       <li>Caractéristiques</li>
+       <li>Acheter</li>
+     </ul>
+    </nav>
+    <div class="left">
+      <div class="text">
+      <h1>Mitsubishi Space Star</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="/">Decouvrez</a>
+      </div>
+    </div>
+    <img src="photos/plat_sushi.png" alt="">
+
   </header>
   </body>
 </html>
