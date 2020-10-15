@@ -217,6 +217,7 @@
         align-items: center;
         width: 100%;
         height: 7%;
+        color: white;
       }
       .header_2 nav ul{
         display: flex;
@@ -232,13 +233,14 @@
         left: 0;
       }
       .header_2 span a img{
-        width: 9vw;
+        width: 8vw;
         position: absolute;
-        top: 10px;
+        top: 55px;
         left: 20px;
+        z-index: 2;
       }
       .header_2 .left{
-        width: 45%;
+        width: 55%;
         height: 100%;
         background: white;
         position: absolute;
@@ -246,16 +248,36 @@
       }
       .header_2 .left .text{
         position: absolute;
-        left: 5%;
+        left: 7%;
         top: 50%;
         transform: translateY(-50%);
-        width: 20%;
-        background: rgb(110, 110, 110);
+        width: 30%;
       }
       .header_2 .left .text h1{
-        font-size: 6vw;
+        font-size: 5vw;
       }
-
+      .header_2 .left .text p{
+        font-size: 1.1vw;
+        padding-top: 10%;
+        line-height: 20px;
+      }
+      .header_2 .left a{
+        color: black;
+        text-decoration: none;
+        font-style: italic;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+      }
+      .header_2 img{
+        position: absolute;
+        right: 0;
+        width: 55%;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 5px;
+        z-index: 2;
+      }
     </style>
   </head>
   <body>
@@ -304,7 +326,7 @@
   </section>
 
   <header class="header_2">
-    <span><a href="/"><img src="photos/logo.png" alt=""></a></span>
+    <span><a href="/"><img src="photos/mitsubishi-logo.png" alt=""></a></span>
     <nav>
      <ul>
        <li>overview</li>
@@ -315,11 +337,11 @@
     <div class="left">
       <div class="text">
       <h1>Mitsubishi Space Star</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="/">Decouvrez</a>
+        <p>Lorem, ipsum dolor<br> sit amet consectetur adipisicing elit. Sed ad exercitationem praesentium nobis.</p>
       </div>
+      <a href="/">Decouvrez</a>
     </div>
-    <img src="photos/plat_sushi.png" alt="">
+    <img src="photos/Mitsubishi_SpaceStar_2016.jpg" alt="">
 
   </header>
   </body>
